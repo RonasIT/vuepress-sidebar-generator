@@ -31,7 +31,6 @@ function getSidebar() {
   const mainSidebar = JSON.parse(fs.readFileSync('docs/.vuepress/sidebar.json'));
 
   const files = getFiles('docs').filter((file) => file.indexOf('sidebar.json') > -1);
-  console.log(getFiles('docs'));
 
   files.forEach((file) => {
     const sidebar = JSON.parse(fs.readFileSync(file));
