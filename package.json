@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-sidebar-generator",
+  "version": "0.0.1",
+  "description": "Sidebar generator from submodules",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonasIT/vuepress-sidebar-generator.git"
+  },
+  "keywords": [
+    "vuepress",
+    "sidebar",
+    "submodules"
+  ],
+  "author": "Ronas IT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RonasIT/vuepress-sidebar-generator/issues"
+  },
+  "homepage": "https://github.com/RonasIT/vuepress-sidebar-generator#readme"
+}
