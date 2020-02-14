@@ -1,6 +1,6 @@
 {
   "name": "@ronas-it/vuepress-sidebar-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sidebar generator from submodules",
   "main": "index.js",
   "scripts": {
