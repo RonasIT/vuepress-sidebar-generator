@@ -7,14 +7,13 @@ function getSidebar() {
     const docPath = 'docs' + mainSidebarItem.path;
 
     if (fs.lstatSync(docPath).isDirectory()) {
-      const sidebarPath = docPath + '.vuepress/sidebar.json';
+      const sidebarPath = docPath + 'docs/.vuepress/sidebar.json';
       const sidebar = JSON.parse(fs.readFileSync(sidebarPath));
 
       for (const sidebarItem of sidebar) {
-        sidebarItem.path = mainSidebarItem.path.slice(0, -1) + sidebarItem.path;
+        sidebarItem.path = mainSidebarItem.path + 'docs' + sidebarItem.path;
       }
 
-      delete mainSidebarItem.path;
       mainSidebarItem.children = sidebar;
     }
   }
